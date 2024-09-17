@@ -1,0 +1,164 @@
+/* 通用样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.languages button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.languages button:hover {
+    background-color: #0073e6;
+}
+
+/* About Me 小标题左对齐，内容右对齐 */
+#about p {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+#about p strong {
+    text-align: left;
+}
+
+#about p span {
+    text-align: right;
+}
+
+/* Experience 部分样式，标题结束后换行，移除列表的黑点 */
+#experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#experience li {
+    margin-bottom: 10px;
+}
+
+#experience li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Skills 部分，左对齐小标题，右对齐内容，每个小标题独占一行 */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#skills ul li strong {
+    text-align: left;
+}
+
+#skills ul li span {
+    text-align: right;
+}
+
+/* 通用样式 */
+section {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004080;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+}
+
+#education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#education ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#education ul li strong {
+    text-align: left;
+}
+
+#education ul li span {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+    font-size: 0.8rem;
+    position: relative; /* 修改 position 以适应页面的需求 */
+    width: 100%;
+    bottom: 0;
+}
+
+/* 增加空白高度来防止信息遮挡 */
+div[style*="height: 100px;"] {
+    height: 100px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    section {
+        width: 90%;
+    }
+}
